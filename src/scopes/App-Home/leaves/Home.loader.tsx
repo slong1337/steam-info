@@ -1,5 +1,4 @@
-import { ClientLoaderFunctionArgs } from '@remix-run/server-runtime/dist/routeModules'
-export {Home} from '@/scopes/App-Home/leaves/Home'
+import { ClientLoaderFunctionArgs } from '@remix-run/react'
 
 const apiKey = import.meta.env.API_KEY as string
 const steamID = import.meta.env.STEAM_ID as string
