@@ -45,7 +45,7 @@ const sortGamesByPlaytime = (games: Game[]) => {
 
 export function Home() {
 
-    const games = useLoaderData<Game[]>()
+    const games = useLoaderData<typeof clientLoader>()
     const totalHours = sumPlaytimeForever(games)
     const totalHours2Week = sumPlaytime2Weeks(games)
     const sortedGames = sortGamesByPlaytime(games)
